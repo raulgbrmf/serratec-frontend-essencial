@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Produtos</title>
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link
+        rel="stylesheet" href="css/styleprodutos.css">
+
+        <!-- Latest compiled and minified CSS -->
+        <link
+        rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+
+    <body>
+
+        <header class="cabecalho">
+
+            <div>
+                <img class="imgcabecalho" src="img/BannerKonohaBoys.jpg" alt="Logo dos Konoha Boys"></h1>
+        </div>
+
+
+        <nav class="text-center navbar-nossabarra ">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick="myButton(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </button>
+                      <script>
+                        function myButton(x) {
+                          x.classList.toggle("change");
+                        }
+                        </script>
+                    <a class="navbar-brand" href="#"><img class="logo-naruto" src="img/logo_pequena.png" alt="Logo Pequena Konoha Boys"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./produtos.html">Produtos</a>
+                        </li>
+                        <li>
+                            <a href="./sobre.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="./contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="./login.html">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Login</a>
+                        </li>
+                        <li>
+                            <a onclick="myFunction()">
+                                <span class="glyphicon glyphicon-adjust"></span>
+                                Dark Mode</a>
+                            <script>
+                                function myFunction() {
+                                    var element = document.body;
+                                    element.classList.toggle("dark-mode");
+                                }
+                            </script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </body>
+</html></header><main class="principal">
+<section class="container-fluid">
+
+  
+        <input type="radio" name="bt" id="bt_todos" checked>
+        <label for="bt_todos">TODOS</label>
+
+        <input type="radio" name="bt" id="bt_kodomo">
+        <label for="bt_kodomo">KODOMO</label>
+
+        <input type="radio" name="bt" id="bt_shounen">
+        <label for="bt_shounen">SHOUNEN</label>
+
+        <input type="radio" name="bt" id="bt_shoujo">
+        <label for="bt_shoujo">SHOUJO</label>
+
+        <input type="radio" name="bt" id="bt_seinen">
+        <label for="bt_seinen">SEINEN</label>
+   
+
+    <div id="galeria">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Boruto #10</div>
+                    <div class="panel-body"><img src="img/boruto_10.jpg" class="img-responsives shounen" style="width:100%" alt="Boruto edição 10"></div>
+                    <div class="panel-footer">Preço: R$22,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Demon Slayer #8</div>
+                    <div class="panel-body"><img src="img/demon_08.jpg" class="img-responsive shounen" style="width:100%" alt="Demon Slayer edição 08"></div>
+                    <div class="panel-footer">Preço: R$24,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">One Piece #96</div>
+                    <div class="panel-body"><img src="img/one_piece_96.jpg" class="img-responsive shounen" style="width:100%" alt="One Piece edição 96"></div>
+                    <div class="panel-footer">Preço: R$19,90</div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div id="galeria">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">One Punch Man #21</div>
+                    <div class="panel-body"><img src="img/one_punch_21.jpg" class="img-responsive seinen" style="width:100%" alt="One Punch Man edição 21"></div>
+                    <div class="panel-footer">Preço: R$24,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Jojo's Bizarre Adventure #6</div>
+                    <div class="panel-body"><img src="img/jojo_06.jpg" class="img-responsive shounen" style="width:100%" alt="Jojo's Bizarre Adventure edição 06"></div>
+                    <div class="panel-footer">Preço: R$29,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Sword Art Online #1</div>
+                    <div class="panel-body"><img src="img/SAO_1.jpg" class="img-responsive shounen" style="width:100%" alt="Sword Art Online edição 01"></div>
+                    <div class="panel-footer">Preço: R$22,90</div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div id="galeria">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Boruto #1</div>
+                    <div class="panel-body"><img src="img/boruto_1.jpg" class="img-responsive shounen" style="width:100%" alt="Boruto primeira edição"></div>
+                    <div class="panel-footer">Preço: R$49,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Hunter X Hunter #1</div>
+                    <div class="panel-body"><img src="img/hxh_1.jpg" class="img-responsive shounen" style="width:100%" alt="Hunter X Hunter primeira edição"></div>
+                    <div class="panel-footer">Preço: R$79,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">My Hero Academia #1</div>
+                    <div class="panel-body"><img src="img/MHA_1.jpg" class="img-responsive shounen" style="width:100%" alt="My Hero Academia primeira edição"></div>
+                    <div class="panel-footer">Preço: R$59,90</div>
+                </div>
+            </div>
+        </div>
+    </div><br>
+
+    <div id="galeria">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Berserk #36</div>
+                    <div class="panel-body"><img src="img/berserk_36.jpg" class="img-responsive seinen" style=" width:100%" alt=" berserk edição 36"></div>
+                    <div class="panel-footer">Preço: R$24,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Kuroko no Basket #12</div>
+                    <div class="panel-body"><img src="img/kuroko_basket_12.jpg" class="img-responsive shounen" style="width:100%" alt="Kuroko no Basket edição 12"></div>
+                    <div class="panel-footer">Preço: R$11,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">One Piece #91</div>
+                    <div class="panel-body"><img src="img/one_piece_91.jpg" class="img-responsive shounen" style="width:100%" alt="One Piece edição 91"></div>
+                    <div class="panel-footer">Preço: R$19,90</div>
+                </div>
+            </div>
+        </div><br>
+    </div>
+
+    <div id="galeria">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Pokémon: Black & White #03</div>
+                    <div class="panel-body"><img src="img/pokemon_BG_03.jpg" class="img-responsive kodomo" style="width:100%" alt="Pokémon: Black & White edição 03"></div>
+                    <div class="panel-footer">Preço: R$11,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Dragon Ball Super #09</div>
+                    <div class="panel-body"><img src="img/dragon_ball_super_09.jpg" class="img-responsive kodomo" style="width:100%" alt="Dragon Ball Super edição 09"></div>
+                    <div class="panel-footer">Preço: R$22,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Naruto Gold #59</div>
+                    <div class="panel-body"><img src="img/naruto_59.jpg" class="img-responsive shounen" style="width:100%" alt="Naruto Gold edição 59"></div>
+                    <div class="panel-footer">Preço: R$22,90</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="galeria">
+        <div class="row">
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Hellsing #1</div>
+                    <div class="panel-body"><img src="img/hellsing_1.jpg" class="img-responsive seinen" style="width:100%" alt="Hellsing primeira edição"></div>
+                    <div class="panel-footer">Preço: R$49,90</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Sailor Moon #14</div>
+                    <div class="panel-body"><img src="img/sailorvol14.jpeg" class="img-responsive shoujo" style="width:100%" alt="Dragon Ball Super edição 09"></div>
+                    <div class="panel-footer">Preço: R$60,50</div>
+                </div>
+            </div>
+            <div class="col-sm-4">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">Sakura Card Captors #5</div>
+                    <div class="panel-body"><img src="img/sakuravol5.jpg" class="img-responsive shoujo" style="width:100%" alt="Naruto Gold edição 59"></div>
+                    <div class="panel-footer">Preço: R$22,90</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="container-fluid">
+        <img class="imgrodape" src="img/konoha.png" alt="Logo Konoha Boys"/>
+        <p class="copyright">&copy; Copyright Konoha Boys - 2020</p>
+    </footer>
+</main></body></html>
