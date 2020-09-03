@@ -1,0 +1,541 @@
+body {
+    background-color: #1e1d32;
+    display: flex;
+    flex-wrap: wrap;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #c2d4f8;
+}
+
+main {
+    width: 100%;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.section-title {
+    text-align: center;
+    color: white;
+    padding-top: 50px;
+    padding-bottom:  50px;
+}
+
+.section-title .title {
+    position: relative;
+    font-family: "Agency FB";
+    font-size: 40px;
+    font-weight: 700;
+    text-shadow: 0 2px 4.8px rgba(30, 29, 50, 0.3);
+    text-transform: uppercase;
+}
+
+.separador {
+    padding: 5%;
+}
+
+.section-title .subtitle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 10;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    opacity: 0.02;
+    text-shadow: 0 2px 4.8px rgba(30, 29, 50, 0.3);
+    color: #c2d4f8;
+    font-family: "Agency FB";
+    font-size: 88px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-bottom: 40px;
+}
+
+.info-section {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 5%;
+}
+
+.info-section>section {
+    margin-top: 20px;
+    padding-bottom: 170px;
+    padding-top: 90px;
+    width: 100%;
+}
+
+.logo-2gether {
+    float: right;
+    max-width: 9%;
+}
+
+.logo img{
+    max-width: 300px;
+}
+
+
+.carousel-item img {
+    width: 100%;
+    height: 100%;
+    max-height: 650px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .bs-carousel {
+        padding-top: 151.5px;
+    }
+
+    .carousel-item img {
+        height: 100%;
+        width: 100%;
+        max-height: 650px;
+        max-width: 1020px;
+
+    }
+
+    .logo-2gether {
+        width: 70% \9;
+        /*Force IE10 and below to size SVG images correctly*/
+        max-width: 20%;
+    }
+
+    .info-section>section {
+        margin-top: 20px;
+        padding-bottom: 80px;
+        padding-top: 45px;
+    }
+}
+
+@media (max-width: 770px) {
+    .bs-carousel {
+        padding-top: 145.9px;
+    }
+}
+
+@media (max-width: 470px){
+    .bs-carousel {
+        padding-top: 115.9px;
+    }
+}
+
+@media (max-width: 420px){
+    .bs-carousel {
+        padding-top: 135.9px;
+    }
+}
+
+
+
+
+
+
+
+
+.text-neon {
+    display: block;
+    height: 100%;
+    text-transform: uppercase;
+    color: #00e3ef;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    transition: all 0.3s ease-out;
+}
+
+.nav-margin {
+    margin: 0 30px;
+}
+
+.menu-container-flex {
+    background-color: rgba(24, 23, 40, 0.8) !important;
+    box-shadow: 3.5px 6.1px 30px rgba(0, 0, 0, 0.57);
+    max-height: 150px;
+    justify-content: space-between;
+    position: fixed;
+}
+
+
+
+.heading {
+    font-family: "Agency FB";
+    font-size: 40px;
+    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-size: 400%;
+    margin: 0px 250px;
+}
+
+.top-heading {
+    font-family: "Agency FB";
+    font-size: 20px;
+    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-size: 200%;
+    margin: 0px 250px;
+}
+
+.sub-heading {
+    margin-top: 15px;
+    font-family: "Agency FB";
+    font-size: 20px;
+    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-caption {
+    top: 20%;
+    bottom: auto;
+}
+
+.carousel-btn {
+    margin-top: 25px;
+    box-shadow: 0px 6px 14px -7px #d2eafa;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    color: #84e4eb !important;
+    font-family: Arial;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 17px 64px;
+    text-decoration: none;
+}
+
+.carousel-btn:hover {
+    background-color: #84e4eb;
+    color: #ffffff !important;
+}
+
+.carousel-game-info {
+    width: 100%;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+.carousel-cell {
+    width: 293px;
+    margin-left: 15%;
+    margin-right: 10px;
+}
+
+
+
+.img-wrap img {
+    width: 180px;
+    height: 180px;
+    display: inline-block;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+
+.myButton:active {
+
+    position: relative;
+    top: 1px;
+}
+
+.separator-img {
+
+    position: relative;
+    width: 100%;
+}
+
+.separator-img::before {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: -887px;
+    left: 0;
+    width: 100%;
+    height: 890px;
+    background: url("/assets/purble-bg-section.png") no-repeat;
+    background-size: cover;
+}
+
+.game-section .item {
+    margin-top: 20px;
+}
+
+.game-section .item-info {
+    background-color: #292845;
+    padding: 60px 60px 0 60px;
+
+}
+
+.game-section .item-wrap {
+    text-decoration: none;
+}
+
+.game-section .item-wrap .image {
+    height: 304px;
+}
+
+.game-section .item-wrap .image img {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    vertical-align: middle;
+    border-style: none;
+}
+
+.game-section .item-info .name {
+    transition: all 0.3s ease-out;
+
+    color: #3dd0d8;
+}
+
+.game-section .item-info .date {
+    transition: all 0.3s ease-out;
+    color: #5c9ddd;
+}
+
+.game-section .item-info .item-title {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 24px;
+    font-weight: 700;
+    font-family: "Agency FB";
+    text-transform: uppercase;
+    line-height: 28px;
+    transition: all 0.3s ease-out;
+}
+
+.game-section .item-info .item-text {
+    color: #c2d4f8;
+    font-size: 16px;
+    font-weight: 300;
+    padding-bottom: 60px;
+    margin-top: 25px;
+}
+
+.game-section .author-comment {
+    background-color: #292845;
+    border-radius: 0px 0px 10px 10px;
+    padding: 25px 60px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.game-section .fa {
+    color: #3dd0d8;
+}
+
+.game-section .autor {
+    margin-left: 5px;
+    color: #c2d4f8;
+}
+
+.question {
+    position: relative;
+
+    width: 100%;
+}
+
+
+.question-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.question-img img {
+    width: 100%;
+}
+
+.img-cut-bottom {
+    width: 100%;
+    -webkit-clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+    clip-path: polygon(0% 0%, 80% 0%, 100% 0%, 100% 80%, 80% 100%, 0% 100%, 0% 86%, 0% 20%);
+}
+
+.img-cut-top {
+    width: 100%;
+    -webkit-clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
+    clip-path: polygon(20% 0%, 100% 0%, 100% 100%, 0% 100%, 0% 20%);
+}
+
+.question-title {
+    color: #3dd0d8;
+    text-align: center;
+    font-family: "Agency FB";
+    font-size: 20px;
+    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-size: 200%;
+}
+
+.question-descrip {
+    text-align: center;
+    transition: all 0.3s ease-out;
+    color: #5c9ddd;
+    text-transform: uppercase;
+    font-family: "Agency FB";
+    font-size: 20px;
+    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
+    font-size: 100%;
+}
+
+.question-text {
+    padding: 30px;
+    transition: all 0.3s ease-out;
+    color: #c2d4f8;
+    font-family: "Agency FB";
+    font-size: 20px;
+    text-shadow: 0 2px 4.8px rgba(0, 0, 0, 0.3);
+
+    font-size: 100%;
+}
+
+.table {
+    display: table;
+    margin-bottom: 0;
+}
+
+.table-cell {
+    display: table-cell;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.fweight-700 {
+    font-weight: 700;
+}
+
+.fsize-14 {
+    font-size: 14px;
+}
+
+.valign-middle {
+    vertical-align: middle;
+}
+
+footer.footer {
+    width: 100%;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    line-height: 1.42857143;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #c2d4f8;
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    padding-top: 2%;
+    text-align: center;
+}
+
+footer.footer::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    opacity: 0.3;
+    background-image: url(/assets/footer-bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .fa {
+    color: #fff;
+}
+
+footer .social-list {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 15px;
+}
+
+.footer-top-text {
+    font-family: Rajdhani, sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: .8em;
+    font-weight: 400;
+    margin: 50px 0 50px;
+    padding: 0;
+}
+
+.footer-bot-social {
+    margin: 0px 0 50px;
+}
+
+
+
+@media (max-width:768px) {
+    .logo-2gether {
+        width: 70% \9;
+        /*Force IE10 and below to size SVG images correctly*/
+        max-width: 20%;
+    }
+}
+
+@media (max-width:411px) {
+    .logo-2gether {
+        width: 70% \9;
+        /*Force IE10 and below to size SVG images correctly*/
+        max-width: 30%;
+    }
+}
+
+@media (max-width:414px) {
+    .logo-2gether {
+        width: 70% \9;
+        /*Force IE10 and below to size SVG images correctly*/
+        max-width: 30%;
+    }
+}
+
+@media (max-width:385px) {
+    .logo-2gether {
+        width: 70% \9;
+        /*Force IE10 and below to size SVG images correctly*/
+        max-width: 40%;
+    }
+}
+
+@media (max-width:345px) {
+    .logo-2gether {
+        width: 65% \9;
+        /*Force IE10 and below to size SVG images correctly*/
+        max-width: 65%;
+    }
+}
+
+@media (max-width:335px) {
+    .logo-2gether {
+        width: 60% \9;
+        /*Force IE10 and below to size SVG images correctly*/
+        max-width: 60%;
+    }
+}
+
+@media (max-width:325px) {
+    .logo-2gether {
+        width: 55% \9;
+        /*Force IE10 and below to size SVG images correctly*/
+        max-width: 40%;
+    }
+}
+
+@media (max-width:315px) {
+    .logo-2gether {
+        width: 50% \9;
+        /*Force IE10 and below to size SVG images correctly*/
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,3 @@
+-Caminho para a pagina inicial é "effects/loading/index.html"
+-Atualmente esse projeto é o que colocamos no heroku.
+-O link para a pagina no heroku é : https://playtwogether.herokuapp.com/
