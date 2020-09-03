@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Contato</title>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/contato.css"/>
+
+        <!-- Latest compiled and minified CSS -->
+        <link
+        rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="cabecalho">
+            <div>
+                
+                    <img class="imgcabecalho" src="img/BannerKonohaBoys.jpg" alt="Logo dos Konoha Boys"/>
+                
+            </div>
+
+            <nav class="navbar-nossabarra text-center">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick="myButton(this)">
+                            <div class="bar1"></div>
+                            <div class="bar2"></div>
+                            <div class="bar3"></div>
+                        </button>
+                        <script>
+                          function myButton(x) {
+                            x.classList.toggle("change");
+                          }
+                          </script>
+                        <a class="navbar-brand" href="#"><img class="logo-naruto" src="img/logo_pequena.png" alt="Logo Pequena Konoha Boys"/></a>
+                    </div>
+                    <div class="collapse navbar-collapse" id="myNavbar">
+                        <ul class="nav navbar-nav">
+                            <li class="active">
+                                <a href="./index.html">Home</a>
+                            </li>
+                            <li>
+                                <a href="./produtos.html">Produtos</a>
+                            </li>
+                            <li>
+                                <a href="./sobre.html">Sobre</a>
+                            </li>
+                            <li>
+                                <a href="./contato.html">Contato</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li>
+                                <a href="./login.html">
+                                    <span class="glyphicon glyphicon-user"></span>
+                                    Login</a>
+                            </li>
+                            <li>
+                              <a class="darkmode" onclick="myFunction()">
+                                <span class="glyphicon glyphicon-adjust"></span>
+                                Dark Mode</a>
+                            <script>
+                                function myFunction() {
+                                    var element = document.body;
+                                    element.classList.toggle("dark-mode");
+                                }
+                            </script>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required placeholder="Digite seu nome completo"/>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuemail@dominio.com"/>
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX) XXXXX-XXXX"/>
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="70" rows="10" id="mensagem" class="input-padrao" required></textarea>
+
+                <fieldset>
+                    <label>Como prefere o nosso contato?</label>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email"/>
+                        Email</label>
+
+                    <label for="radio-telefone"><input type="radio" name="contato" value="telefone" id="radio-telefone"/>
+                        Telefone</label>
+
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked/>
+                        WhatsApp</label>
+                </fieldset>
+
+                <fieldset>
+                    <label>Qual horário prefere ser atendido?</label>
+                    <select class="selecttime">
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label class="checkbox"><input type="checkbox" checked/>Gostaria de receber nossas novidades
+                              por email?</label>
+
+                <input type="submit" value="Enviar" class="enviar"/>
+            </form>
+        </main>
+
+        <footer class="container-fluid">
+            <img class="imgrodape" src="img/konoha.png" alt="Logo Konoha Boys"/>
+            <p class="copyright">&copy; Copyright Konoha Boys - 2020</p>
+        </footer>
+    </body>
+</html>
