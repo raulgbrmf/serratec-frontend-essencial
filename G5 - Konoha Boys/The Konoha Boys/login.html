@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Login</title>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/login.css"/>
+
+        <!-- Latest compiled and minified CSS -->
+        <link
+        rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"/>
+
+        <!-- jQuery library -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <!-- Popper JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        <header class="cabecalho">
+
+            <div>
+                <img class="imgcabecalho" src="img/BannerKonohaBoys.jpg" alt="Logo dos Konoha Boys">
+            </div>
+         <nav class="navbar-nossabarra text-center">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar" onclick="myButton(this)">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </button>
+                    <script>
+                        function myButton(x) {
+                            x.classList.toggle("change");
+                        }
+                    </script>
+                    <a class="navbar-brand" href="#"><img class="logo-naruto" src="img/logo_pequena.png" alt="Logo Pequena Konoha Boys"></a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="./index.html">Home</a>
+                        </li>
+                        <li>
+                            <a href="./produtos.html">Produtos</a>
+                        </li>
+                        <li>
+                            <a href="./sobre.html">Sobre</a>
+                        </li>
+                        <li>
+                            <a href="./contato.html">Contato</a>
+                        </li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="./login.html">
+                                <span class="glyphicon glyphicon-user"></span>
+                                Login</a>
+                        </li>
+                        <li>
+                            <a class="darkmode" onclick="myFunction()">
+                                <span class="glyphicon glyphicon-adjust"></span>
+                                Dark Mode</a>
+                            <script>
+                                function myFunction() {
+                                    var element = document.body;
+                                    element.classList.toggle("dark-mode");
+                                }
+                            </script>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        </header>
+        <main>
+            
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-6 col-md-4 col-md-offset-4">
+                        <h1 class="text-center login-title"><span class="aa">Entre no site Konoha Boys</span></h1>
+                        <div class="account-wall">
+                            <img class="profile-img" src="img/user-loginpng.png" alt="Imagem do usuário"/>
+                        
+                            <form id="id-form" class="form-signin">
+                            <input id="login" type="text" class="form-control" placeholder="Login" required autofocus>
+                            <input id ="senha" type="password" class="form-control" placeholder="Senha" required>
+                            <button id="login-enviar" class="btn btn-lg btn-primary btn-block" type="submit" onclick="validacaoLogin()">
+                                Iniciar sessão</button>
+                            <label class="checkbox pull-left">
+                                <input type="checkbox" value="remember-me">
+                                <span class="aa">Lembre-me</span>
+                            </label>
+                            <a href="#" class="pull-right need-help">Ajuda? </a><span class="clearfix"></span>
+                            </form>
+                        </div>
+                        <a href="#" class="text-center new-account">Criar conta </a>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <footer class="container-fluid">
+            <img class="imgrodape" src="img/konoha.png" alt="Logo Konoha Boys" />
+            <p class="copyright">&copy; Copyright Konoha Boys - 2020</p>
+        </footer>
+        <script src="js/login.js"></script>
+    </body>
+</html>
