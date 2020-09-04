@@ -7,7 +7,7 @@ Os trabalhos deste respositório se encontram hospedados também nos seguintes l
 * Grupo 1
   * http://g2acpetropolis.herokuapp.com/
 * Grupo 2
-  * a adicionar
+  * https://playtwogether.herokuapp.com/
 * Grupo 3
   * https://vhcorretora.herokuapp.com/index.html
 * Grupo 4
