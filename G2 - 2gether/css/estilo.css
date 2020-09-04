@@ -1,0 +1,583 @@
+/* Geral */
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 300;
+    color: #c2d4f8;
+    background-color: #1e1d32; }
+    body .loader-wrapper {
+      margin: 0;
+      padding: 0;
+      font-family: "Open Sans", sans-serif;
+      font-size: 62.5%;
+      width: 100vw;
+      height: 100vh;
+      background: #1e1d32; }
+    body.no-scroll {
+      overflow: hidden; }
+      
+div {
+    display: block;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}
+a {
+    background-color: transparent;
+}
+img {
+    vertical-align: middle;
+}
+.header-line-wrapper.affix-top header .logo img {
+    max-width: 55%;
+}
+header .main-menu .menu > li a {
+    display: block;
+    height: 100%;
+    text-transform: uppercase;
+    color: #fff;
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    transition: all 0.3s ease-out;
+}
+header .main-menu .menu > li:first-child {
+    margin-left: 0;
+}
+header .main-menu .menu > li {
+    line-height: 140px;
+    float: left;
+    margin: 0 30px;
+    position: relative;
+}
+.inline-block {
+    display: inline-block;
+}
+header .main-menu .menu > li.active a {
+    color: #3dd0d8;
+}
+header.header-wrapper {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+    transition: all 0.3s ease-out;
+}
+.header-line-wrapper.affix-top header .main-menu .menu > li {
+    line-height: 100px;
+}
+.plr100 {
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+::selection {
+    background: #3dd0d8;
+    color: #fff;
+}
+.table-cell {
+    display: table-cell;
+}
+.valign-top {
+    vertical-align: top;
+}
+
+
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
+
+.title-bl {
+    position: relative;
+    z-index: 3; }
+    .title-bl .title {
+      position: relative;
+      font-family: "Agency FB";
+      font-size: 40px;
+      font-weight: 700;
+      text-shadow: 0 2px 4.8px rgba(30, 29, 50, 0.3);
+      text-transform: uppercase;
+      /* padding-top: 25px;
+          padding-bottom: 25px; */ }
+    .title-bl .subtitle {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      z-index: 10;
+      -webkit-transform: translate(-50%, -50%);
+              transform: translate(-50%, -50%);
+      opacity: 0.02;
+      text-shadow: 0 2px 4.8px rgba(30, 29, 50, 0.3);
+      color: #c2d4f8;
+      font-family: "Agency FB";
+      font-size: 88px;
+      font-weight: 700;
+      text-transform: uppercase;
+      white-space: nowrap;
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      /* line-height: 100%; */ }
+
+.color-white {
+    color: #fff;
+}
+.color-gray {
+    color: rgb(158, 174, 207);
+}
+.valign-top {
+    vertical-align: top;
+}
+.table-cell {
+    display: table-cell;
+}
+
+.ptb30 {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.ptb150 {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.mt25 {
+    margin-top: 25px;
+}
+.mt30 {
+    margin-top: 30px;
+}
+.mt60 {
+    margin-top: 60px;
+}
+.mt90 {
+    margin-top: 90px;
+}
+
+.mb110 {
+    margin-bottom: 110px;
+}
+
+
+a {
+    background-color: transparent;
+}
+a {
+    text-decoration: none;
+}
+.row {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+
+.faq-container .counter-bl {
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    font-family: "Agency FB";
+    background-image: linear-gradient(to right, #3dd0d8 0%, rgba(124, 105, 227, 0.64) 100%);
+    border-radius: 50%;
+    text-align: center;
+    font-size: 48px;
+    font-weight: 700;
+    color: #fff; }
+  
+  .faq-container .column {
+    padding-top: 60px;
+    padding-bottom: 60px; }
+  
+  .faq-container .left-column-1 {
+    border-right: 1px solid rgba(194, 212, 248, 0.2);
+    border-top: 1px solid rgba(194, 212, 248, 0.2);
+    border-bottom: 1px solid rgba(194, 212, 248, 0.2); }
+    .faq-container .left-column-1 .counter-content {
+      padding-left: 30px; }
+  
+  .faq-container .right-column-2 {
+    border-top: 1px solid rgba(194, 212, 248, 0.2);
+    border-bottom: 1px solid rgba(194, 212, 248, 0.2); }
+    .faq-container .right-column-2 .counter-content {
+      padding-right: 30px; }
+  
+  .faq-container .left-column-3 {
+    border-right: 1px solid rgba(194, 212, 248, 0.2); }
+    .faq-container .left-column-3 .counter-content {
+      padding-left: 30px; }
+  
+  .faq-container .right-column-4 .counter-content {
+    padding-right: 30px; }
+  
+  .faq-container .counter-content .counter-title {
+    text-shadow: 0 2px 4.8px rgba(30, 29, 50, 0.3);
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Agency FB";
+    color: #fff; }
+    
+.uppercase {
+    text-transform: uppercase; }
+.fsize-14 {
+    font-size: 14px; }
+.fweight-700 {
+    font-weight: 700; }
+.table {
+        display: table;
+        margin-bottom: 0; }
+.ws-20 {
+    word-spacing: 20px; }
+.color-1 {
+    color: #3dd0d8; }
+
+
+.game-section {
+    position: relative;
+    z-index: 2; }
+  
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    font-size: 28px;
+    color: #68dde3;
+    cursor: pointer; }
+    .slick-arrow.fa-angle-left {
+      left: -60px; }
+    .slick-arrow.fa-angle-right {
+      right: -60px; }
+  
+  .tm-tabs .nav-tabs {
+    border-bottom: none;
+    margin: 0; }
+    .tm-tabs .nav-tabs li {
+      text-align: center;
+      outline: none; }
+      .tm-tabs .nav-tabs li.active > a,
+      .tm-tabs .nav-tabs li.active > a:hover,
+      .tm-tabs .nav-tabs li.active > a:focus {
+        background-color: transparent;
+        border: none; }
+      .tm-tabs .nav-tabs li.active .nav-title {
+        color: #3dd0d8; }
+      .tm-tabs .nav-tabs li.active .img-wrap:after {
+        opacity: 1;
+        visibility: visible; }
+      .tm-tabs .nav-tabs li.active:hover .nav-title {
+        color: #fff; }
+      .tm-tabs .nav-tabs li a {
+        outline: none;
+        text-decoration: none;
+        display: block;
+        margin-right: 0;
+        padding: 10px 0px;
+        border: none; }
+        .tm-tabs .nav-tabs li a:hover {
+          background-color: transparent;
+          border: none; }
+          .tm-tabs .nav-tabs li a:hover .nav-title {
+            color: #3dd0d8;
+            transition: all 0.3s ease-out; }
+        .tm-tabs .nav-tabs li a .img-wrap {
+          width: 180px;
+          height: 180px;
+          display: inline-block;
+          border-radius: 50%;
+          overflow: hidden;
+          position: relative; }
+          .tm-tabs .nav-tabs li a .img-wrap:after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            opacity: 0;
+            visibility: hidden;
+            background-image: linear-gradient(to right, rgba(0, 180, 214, 0.64) 0%, rgba(124, 105, 227, 0.64) 100%); }
+        .tm-tabs .nav-tabs li a .nav-header-bl {
+          text-transform: uppercase; }
+          .tm-tabs .nav-tabs li a .nav-header-bl .nav-title {
+            font-family: "Agency FB";
+            font-size: 40px;
+            font-weight: 700;
+            line-height: normal;
+            white-space: nowrap;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            transition: all 0.3s ease-out; }
+            .tm-tabs .nav-tabs li a .nav-header-bl .nav-title:hover {
+              color: #3dd0d8;
+              transition: all 0.3s ease-out; }
+          .tm-tabs .nav-tabs li a .nav-header-bl .date {
+            color: #c2d4f8;
+            font-size: 14px;
+            font-weight: 700;
+            line-height: normal; }
+  
+  .tm-tabs .tab-content {
+    background-color: #292845;
+    border-radius: 10px; }
+    .tm-tabs .tab-content .game-full-img {
+      width: 570px;
+      height: 450px;
+      background-size: cover;
+      background-position: center center;
+      border-radius: 10px;
+      overflow: hidden;
+      max-width: 100%; }
+    .tm-tabs .tab-content .image-bl {
+      position: absolute;
+      top: 50%;
+      right: -60px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+
+  
+  .rating .fa {
+    color: #f9a450;
+    cursor: pointer; }
+
+    .lheight-normal {
+        line-height: normal;
+    }
+    .color-white {
+        color: #fff;
+    }
+    .uppercase {
+        text-transform: uppercase;
+    }
+    .fweight-700 {
+        font-weight: 700;
+    }
+    .fsize-32 {
+        font-size: 32px;
+    }
+    .font-agency {
+        font-family: "Agency FB";
+    }
+    .mt50 {
+        margin-top: 50px;
+    }
+    .lheight-26 {
+        line-height: 26px;
+    }
+    .fweight-300 {
+        font-weight: 300;
+    }
+    table {
+        display: table;
+        margin-bottom: 0;
+    }
+    .fsize-14 {
+        font-size: 14px;
+    }
+    .ptb90 {
+        padding-top: 90px;
+        padding-bottom: 90px;
+    }
+    .pl100 {
+        padding-left: 100px;
+    }
+    .pr0 {
+        padding-right: 0;
+    }
+   
+
+
+    footer.footer {
+        width: 100%;
+        -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+        line-height: 1.42857143;
+        font-family: "Roboto", sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        color: #c2d4f8;
+        box-sizing: border-box;
+        display: block;
+        position: relative;
+        padding-top: 2%;
+        text-align: center;
+    }
+    
+    footer.footer::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 0.3;
+        background-image: url(/assets/footer-bg.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    footer .fa {
+        color: #fff;
+    }
+    
+    footer .social-list {
+        display: inline-block;
+        vertical-align: middle;
+        margin: 0 15px;
+    }
+    
+    .footer-top-text {
+        font-family: Rajdhani, sans-serif;
+        text-transform: uppercase;
+        color: #fff;
+        font-size: 16px;
+        letter-spacing: .8em;
+        font-weight: 400;
+        margin: 50px 0 50px;
+        padding: 0;
+    }
+    
+    .footer-bot-social {
+        margin: 0px 0 50px;
+    }
+    
+
+    .menu-container-flex {
+        background-color: rgba(24, 23, 40, 0.8) !important;
+        box-shadow: 3.5px 6.1px 30px rgba(0, 0, 0, 0.57);
+        max-height: 150px;
+        justify-content: space-between;
+        position: fixed;
+    }
+
+    .logo-2gether {
+        float: right;
+        max-width: 9%;
+    }
+
+    .text-neon {
+        display: block;
+        height: 100%;
+        text-transform: uppercase;
+        color: #00e3ef;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        transition: all 0.3s ease-out;
+    }
+
+    .nav-margin {
+        margin: 0 30px;
+    }
+
+    @media (max-width:768px) {
+        .logo-2gether {
+            width: 70% \9;
+            /*Force IE10 and below to size SVG images correctly*/
+            max-width: 20%;
+        }
+    }
+    
+    @media (max-width:411px) {
+        .logo-2gether {
+            width: 70% \9;
+            /*Force IE10 and below to size SVG images correctly*/
+            max-width: 30%;
+        }
+    }
+    
+    @media (max-width:414px) {
+        .logo-2gether {
+            width: 70% \9;
+            /*Force IE10 and below to size SVG images correctly*/
+            max-width: 30%;
+        }
+    }
+    
+    @media (max-width:385px) {
+        .logo-2gether {
+            width: 70% \9;
+            /*Force IE10 and below to size SVG images correctly*/
+            max-width: 40%;
+        }
+    }
+    
+    @media (max-width:345px) {
+        .logo-2gether {
+            width: 65% \9;
+            /*Force IE10 and below to size SVG images correctly*/
+            max-width: 65%;
+        }
+    }
+    
+    @media (max-width:335px) {
+        .logo-2gether {
+            width: 60% \9;
+            /*Force IE10 and below to size SVG images correctly*/
+            max-width: 60%;
+        }
+    }
+    
+    @media (max-width:325px) {
+        .logo-2gether {
+            width: 55% \9;
+            /*Force IE10 and below to size SVG images correctly*/
+            max-width: 40%;
+        }
+    }
+    
+    @media (max-width:315px) {
+        .logo-2gether {
+            width: 50% \9;
+            /*Force IE10 and below to size SVG images correctly*/
+            max-width: 50%;
+        }
+    }
+
+
+
+
+
+
+    .carousel-caption {
+        top: 20%;
+        bottom: auto;
+    }
+    
+    .carousel-btn {
+        margin-top: 25px;
+        box-shadow: 0px 6px 14px -7px #d2eafa;
+        background-color: #ffffff;
+        border-radius: 8px;
+        display: inline-block;
+        cursor: pointer;
+        color: #84e4eb !important;
+        font-family: Arial;
+        font-size: 20px;
+        font-weight: bold;
+        padding: 17px 64px;
+        text-decoration: none;
+    }
+    
+    .carousel-btn:hover {
+        background-color: #84e4eb;
+        color: #ffffff !important;
+    }
+    
+    .carousel-game-info {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+    
+    .carousel-cell {
+        width: 293px;
+        margin-left: 15%;
+        margin-right: 10px;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        max-height: 650px;
+    }
